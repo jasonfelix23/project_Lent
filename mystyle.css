@@ -1,0 +1,285 @@
+*{
+	margin:0.5px;
+	padding:0.5px;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+body{
+	background-color: #e6e4df;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color:#353837;
+	color: #8ebcbd;
+	font-family: Black ops one;
+}
+.logo{
+	margin-left: -250px;
+	margin-top: 15px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size:36px;
+}
+.nav-links{
+	margin-right: -250px;
+	margin-top: 20px;
+	display: flex;
+	width:25%;
+	justify-content: space-between;
+}
+.nav-links li{
+	list-style: none;
+	overflow-y: hidden;
+}
+.nav-links a{
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 20px;
+	color: #8ebcbd;
+}
+.nav-links a:hover{
+	background-color: #8ebcbd;
+	color: #111;
+}
+.dropdown {
+	display: none;
+}
+ul{
+	float:right;
+	list-style-type: none;
+	margin-top: 20px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 15px;
+	border: solid transparent;
+	border-width: 1px;
+}
+ul{
+	float:right;
+	list-style-type: none;
+	margin-top: 20px;
+}
+ul li a:hover{
+	background-color: #000;
+	color:#fff;
+	transition: 0.6s;
+}
+@media screen and (max-width: 1024px){
+	.nav-links{
+	    width:60%;
+	   ;
+}
+}
+@media screen and (max-width: 600px){
+	body{
+		overflow-x: hidden;
+	}
+	.nav-links{
+		display: none;
+	}
+	.dropbtn {
+  background-color: #111;
+  color: #8ebcbd;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #8ebcbd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #8ebcbd; color: #111}
+}
+img{
+	opacity: 0.75
+}
+.what{
+	font-size: 65px;
+	position: relative;
+	color: white;
+	top:-400px;
+	left:700px;
+	letter-spacing: 2px;
+	font-family: Bungee Inline;
+}
+.btn{
+	position: relative;
+	top: -400px;
+	left: 850px;
+	padding: 2px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 8px;
+	display: inline-block;
+	font-family: Nanum pen script;
+	background-color:#3d4045;
+	color: white;
+	border:1px solid white;
+}
+.btn:hover{
+	background-color: white;
+}
+hr.new1{
+	border-top: 5px solid #8ebcbd;
+	position: relative;
+	top: -620px;
+}
+hr.new2{
+	border-top: 5px solid #8ebcbd;
+	position: relative;
+	top: -192px;
+}
+.btn1,.btn3{
+	
+	width: 200px;
+	height: 150px;
+	background:#8ebcbd;
+	border:4px solid white;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: archivo black;
+	border-radius: 25%;
+	color: #45433f
+	
+}
+.btn1:hover,.btn3:hover{
+	font-size:0px;
+	background-color:#45433f;
+	color: #8ebcbd;
+	border-color: #8ebcbd;
+}
+.btn2,.btn4{
+	width: 200px;
+	height: 150px;
+	background:#45433f;
+	border:4px solid #8ebcbd;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: archivo black;
+	border-radius: 25%;
+	color: #8ebcbd
+}
+.btn2:hover,.btn4:hover{
+	font-size: 0px;
+	background-color:#8ebcbd;
+	color: #45433f;
+	border-color: white;
+}
+.btn1{
+	position: absolute;
+	top:650px;
+	left: 200px;
+}
+.btn2{
+	position: absolute;
+	top:650px;
+	left: 450px;
+}
+.btn3{
+	position: absolute;
+	top:650px;
+	left: 700px;
+}
+.btn4{
+	position: absolute;
+	top:650px;
+	left: 950px;
+}
+.btn1:hover:after,.btn2:hover:after,.btn3:hover:after,.btn4:hover:after{
+	content: attr(data-hover);
+	font-size: 20px;
+}
+.Imp{
+	position: absolute;
+	top:550px;
+	left: 37%;
+}
+.Imp hr,.words hr{
+	border:1px solid black;
+}
+.Imp p,.words p{
+	font-family: Girassol;
+	font-size: 45px;
+	font-weight: 700px;
+	letter-spacing: 3px;
+}
+.words{
+	position: absolute;
+	top:850px;
+	left:22%;
+}
+.tables{
+	position: absolute;
+	top:950px;
+	left: 25%;
+}
+.intro{
+	position: relative;
+	top: 20px;
+	left: 36%;
+	font-family: Girassol;
+	letter-spacing: 5px;
+}
+.new4{
+	border:0.5px solid black;
+	position:relative;
+	top: 0px;
+}
+.pre a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 16px;
+}
+.pre a:hover{
+	background-color: black;
+	color: white;
+}
+.previous{
+	color:black;
+	background-color: none;
+	position: absolute;
+	top:35px;
+}
+.block p{
+	font-size: 20px;
+	padding: 5px;
+}
+.block p::first-letter{
+	font-size: 200%;
+}
